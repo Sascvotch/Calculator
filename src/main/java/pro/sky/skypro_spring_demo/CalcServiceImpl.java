@@ -27,7 +27,7 @@ public class CalcServiceImpl implements CalcService {
             double numberDiv = number1 / number2;
             return number1 + " / " + number2 + "=" + numberDiv;
         } else {
-            return "На ноль делить нельзя";
+            return "На ноль делить нельзя, поменяйте значение параметра";
         }
     }
 }
