@@ -10,6 +10,7 @@ public class CalcServiceImpl implements CalcService {
     }
 
     public String plusCalc (int number1, int number2){
+
         double numberSum = number1+number2;
         return number1 + " + " +number2 + "=" + numberSum;
     }
