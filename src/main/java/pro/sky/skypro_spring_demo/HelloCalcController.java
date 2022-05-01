@@ -27,7 +27,7 @@ public class HelloCalcController {
             return "Вы не ввели параметр num1";
         }
         if (number2.isEmpty()) {
-            return "Вы не ввели параметр num1";
+            return "Вы не ввели параметр num2";
         }
         return calcService.plusCalc(number1, number2);
     }
@@ -38,7 +38,7 @@ public class HelloCalcController {
             return "Вы не ввели параметр num1";
         }
         if (number2.isEmpty()) {
-            return "Вы не ввели параметр num1";
+            return "Вы не ввели параметр num2";
         }
         return calcService.minusCalc(number1, number2);
     }
@@ -49,7 +49,7 @@ public class HelloCalcController {
             return "Вы не ввели параметр num1";
         }
         if (number2.isEmpty()) {
-            return "Вы не ввели параметр num1";
+            return "Вы не ввели параметр num2";
         }
         return calcService.multiplyCalc(number1, number2);
     }
@@ -60,7 +60,7 @@ public class HelloCalcController {
             return "Вы не ввели параметр num1";
         }
         if (number2.isEmpty()) {
-            return "Вы не ввели параметр num1";
+            return "Вы не ввели параметр num2";
         }
         return calcService.divideCalc(number1, number2);
     }
