@@ -23,18 +23,16 @@ public class CalcServiceImpl implements CalcService {
 
     public String multiplyCalc(Optional<Integer> number1, Optional<Integer> number2) {
         double numberMult = number1.get() * number2.get();
-
         return number1.get() + " * " + number2.get() + "=" + numberMult;
     }
 
     public String divideCalc(Optional<Integer> number1, Optional<Integer> number2) {
-
-        if (number2.get() != 0) {
-            double numberDiv = number1.get() / number2.get();
-            return number1.get() + " / " + number2.get() + "=" + numberDiv;
-        } else {
-            return "На ноль делить нельзя, поменяйте значение параметра";
+        if (number2.get() == 0) {
+            throw new IllegalArgumentException("деление на ноль");
         }
+        double numberDiv = number1.get() / number2.get();
+        return number1.get() + " / " + number2.get() + "=" + numberDiv;
+
     }
 
 
